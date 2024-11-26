@@ -1,37 +1,74 @@
-<div class="carousel carousel-center bg-neutral rounded-box max-w-lg gap-x-1.5">
-    <div class="carousel-item">
-        <img
-                src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-                class="rounded-box" />
-    </div>
-    <div class="carousel-item">
-        <img
-                src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-                class="rounded-box" />
-    </div>
-    <div class="carousel-item">
-        <img
-                src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-                class="rounded-box" />
-    </div>
-    <div class="carousel-item">
-        <img
-                src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
-                class="rounded-box" />
-    </div>
-    <div class="carousel-item">
-        <img
-                src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
-                class="rounded-box" />
-    </div>
-    <div class="carousel-item">
-        <img
-                src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
-                class="rounded-box" />
-    </div>
-    <div class="carousel-item">
-        <img
-                src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
-                class="rounded-box" />
+<script>
+    import emblaCarouselSvelte from 'embla-carousel-svelte';
+    import Autoplay from "embla-carousel-autoplay";
+
+    let emblaApi;
+    let options = { loop: true };
+    let plugins = [Autoplay({ delay: 3000, stopOnInteraction: false })];
+
+    function onInit(event) {
+        emblaApi = event.detail;
+    }
+
+    let Skill = {
+        Angular: {
+            name: "Angular",
+            logo: "/logos/angular.png"
+        },
+        React: {
+            name: "React",
+            logo: "/logos/react.svg"
+        },
+        Vue: {
+            name: "Vue",
+            logo: "/logos/vue.png"
+        },
+        Svelte: {
+            name: "Svelte",
+            logo: "/logos/svelte.png"
+        },
+        TailwindCSS: {
+            name: "TailwindCSS",
+            logo: "/logos/tailwind.svg"
+        },
+        Android: {
+            name: "Android Development",
+            logo: "/logos/android.png"
+        },
+        Flutter: {
+            name: "Flutter",
+            logo: "/logos/flutter.svg"
+        },
+        Rust: {
+            name: "Rust",
+            logo: "/logos/rust.svg"
+        },
+    }
+</script>
+
+<div class="embla overflow-hidden w-full max-w-md mx-auto" use:emblaCarouselSvelte="{{ options, plugins }}"
+     on:emblaInit="{onInit}">
+    <div class="embla__container flex">
+        {#each Object.values(Skill) as {name, logo}}
+            <div class="embla__slide flex-[0_0_50%] sm:flex-[0_0_33.33%] min-w-0 flex justify-center items-center p-4">
+                <div class="flex flex-col items-center">
+                    <img src="{logo}" alt="{name}" class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 object-contain"/>
+                    <p class="text-center text-sm sm:text-base md:text-lg font-light mt-2">{name}</p>
+                </div>
+            </div>
+        {/each}
     </div>
 </div>
+
+<style>
+    .embla__slide {
+        flex: 0 0 50%;
+    }
+
+    @media (min-width: 640px) {
+        .embla__slide {
+            flex: 0 0 33.33%;
+        }
+    }
+</style>
+

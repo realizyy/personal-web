@@ -1,6 +1,7 @@
 <script>
     import "../app.css";
     import Navbar from "$lib/components/Navbar/Navbar.svelte";
+    import Footer from "$lib/components/Footer/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -10,14 +11,8 @@
     </style>
 </svelte:head>
 
-<div class="container mx-auto">
+<div class="container content max-h-screen mx-auto">
     <Navbar />
-    <div class="content container">
-        <slot />
-    </div>
+    <slot />
+    <Footer />
 </div>
-
-<style lang="scss">
-
-
-</style>
