@@ -1,22 +1,34 @@
 <script>
     const projects = [
         {
-            title: 'Project 1',
-            description: 'A brief description of Project 1',
+            title: 'Dkampus',
+            description: 'Dkampus is a platform food delivery service for students in Local University.',
             image: 'https://placehold.co/600x400/png',
-            tags: ['React', 'Node.js', 'MongoDB'],
+            tags: ['Laravel', 'Node.js', 'Firebase'],
         },
         {
-            title: 'Project 2',
-            description: 'A brief description of Project 2',
+            title: 'Dkampus V.2',
+            description: 'Remake of Dkampus with new features and better performance.',
             image: 'https://placehold.co/600x400/png',
-            tags: ['Svelte', 'Firebase', 'Tailwind CSS'],
+            tags: ['Svelte', 'Node.js', 'Typescript'],
         },
         {
-            title: 'Project 3',
-            description: 'A brief description of Project 3',
+            title: 'Unit3C',
+            description: 'Unit3C is a platform for sertificate computing course for my university.',
             image: 'https://placehold.co/600x400/png',
-            tags: ['Vue.js', 'Express', 'PostgreSQL'],
+            tags: ['HTML', 'CSS'],
+        },
+        {
+            title: 'Event website for XYZ Company',
+            description: 'A website for XYZ Company to promote their event.',
+            image: 'https://placehold.co/600x400/png',
+            tags: ['Laravel', 'Tailwind', 'Node.js'],
+        },
+        {
+            title: 'Dashboard Banker for XYZ Company',
+            description: 'A dashboard for XYZ Company to manage their customer data and transaction.',
+            image: 'https://placehold.co/600x400/png',
+            tags: ['Vue.js', 'Node.js', 'Express'],
         },
     ];
 </script>

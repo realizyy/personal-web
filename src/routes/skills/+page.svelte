@@ -3,12 +3,24 @@
     import { fade } from 'svelte/transition';
 
     const skills = [
+        { name: 'HTML', level: 95 },
+        { name: 'CSS', level: 90 },
         { name: 'JavaScript', level: 90 },
+        { name: 'PHP', level: 90},
+        { name: 'Java' , level: 80},
         { name: 'React', level: 85 },
-        { name: 'Svelte', level: 80 },
+        { name: 'Svelte', level: 70 },
+        { name: 'Flutter', level: 60 },
         { name: 'Node.js', level: 75 },
-        { name: 'Python', level: 70 },
-        { name: 'SQL', level: 65 },
+        { name: 'Python', level: 80 },
+        { name: 'Django', level: 75 },
+        { name: 'Laravel', level: 90 },
+        { name: 'Express', level: 75 },
+        { name: 'MongoDB', level: 70 },
+        { name: 'MySQL', level: 75 },
+        { name: 'LUA', level: 80 },
+        { name: 'C++', level: 70 },
+        { name: 'C#', level: 70}
     ];
 
     let visible = false;

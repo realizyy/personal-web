@@ -1,27 +1,21 @@
 <script>
     const experiences = [
         {
-            company: 'Tech Corp',
-            position: 'Senior Developer',
-            period: 'Jan 2020 - Present',
-            description: 'Led a team of developers in creating innovative web applications.',
+            company: 'Dcreativ Indonesia',
+            position: 'Frontend Web Developer',
+            period: 'Oct 2023 - Sep 2024',
+            description: 'Developing and maintaining the company\'s website and web application.',
         },
         {
-            company: 'Web Solutions Inc.',
-            position: 'Full Stack Developer',
-            period: 'Mar 2017 - Dec 2019',
-            description: 'Developed and maintained various client projects using modern web technologies.',
-        },
-        {
-            company: 'StartUp XYZ',
-            position: 'Junior Developer',
-            period: 'Jun 2015 - Feb 2017',
+            company: 'VML | Wunderman Thompson Indonesia',
+            position: 'Web Developer',
+            period: 'Sep 2023 - Dec 2023',
             description: 'Assisted in the development of the company\'s main product and gained valuable experience.',
         },
     ];
 </script>
 
-<div class="container mx-auto px-4 py-8">
+<div class="container mx-auto min-h-screen px-4 py-8">
     <h1 class="text-4xl font-bold mb-8 text-center">Experience</h1>
     <div class="space-y-6">
         {#each experiences as exp}
