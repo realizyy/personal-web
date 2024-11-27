@@ -1,9 +1,5 @@
 <script>
-    import { onMount } from "svelte";
     import Carousel from "$lib/components/Carousel/Carousel.svelte";
-    onMount(() => {
-        console.log("Hello There~");
-    });
 </script>
 
 <div class="flex flex-col md:flex-row justify-center items-center min-h-screen p-4 md:p-8 gap-8">
