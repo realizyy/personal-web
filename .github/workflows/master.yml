@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout code ✨
       uses: actions/checkout@v2
 
-    - name: Install dependencies
+    - name: Install dependencies🚀🚀
       run: npm install
 
-    - name: Build project
+    - name: 🚄🚄 Build project
       run: npm run build
 
     - name: Deploy to cPanel
@@ -26,4 +26,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: build/
-        server-dir: /public_html/
+        server-dir: /
