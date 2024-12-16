@@ -11,6 +11,14 @@
     }
 
     let Skill = {
+        Laravel: {
+            name: "Laravel",
+            logo: "/logos/laravel.svg"
+        },
+        JavaScript: {
+            name: "JavaScript",
+            logo: "/logos/js.png"
+        },
         Angular: {
             name: "Angular",
             logo: "/logos/angular.png"
@@ -26,6 +34,10 @@
         Svelte: {
             name: "Svelte",
             logo: "/logos/svelte.png"
+        },
+        Typescript: {
+            name: "Typescript",
+            logo: "/logos/ts.png"
         },
         TailwindCSS: {
             name: "TailwindCSS",
@@ -43,6 +55,22 @@
             name: "Rust",
             logo: "/logos/rust.svg"
         },
+        Python: {
+            name: "Python",
+            logo: "/logos/python.png"
+        },
+        Bootstrap: {
+            name: "Bootstrap",
+            logo: "/logos/bootstrap.svg"
+        },
+        Firebase: {
+            name: "Firebase",
+            logo: "/logos/firebase.png"
+        },
+        Vite: {
+            name: "Vite",
+            logo: "/logos/vite.png"
+        }
     }
 </script>
 
