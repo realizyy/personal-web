@@ -3,31 +3,31 @@
         {
             title: 'Dkampus',
             description: 'Dkampus is a platform food delivery service for students in Local University.',
-            image: 'https://placehold.co/600x400/png',
+            image: 'https://realizy.my.id/DK-1.png',
             tags: ['Laravel', 'Node.js', 'Firebase'],
         },
         {
             title: 'Dkampus V.2',
             description: 'Remake of Dkampus with new features and better performance.',
-            image: 'https://placehold.co/600x400/png',
+            image: 'https://realizy.my.id/DKSV-1.png',
             tags: ['Svelte', 'Node.js', 'Typescript'],
         },
         {
             title: 'Unit3C',
             description: 'Unit3C is a platform for sertificate computing course for my university.',
-            image: 'https://placehold.co/600x400/png',
+            image: 'https://realizy.my.id/U3C-1.png',
             tags: ['HTML', 'CSS'],
         },
         {
             title: 'Event website for XYZ Company',
             description: 'A website for XYZ Company to promote their event.',
-            image: 'https://placehold.co/600x400/png',
+            image: 'https://realizy.my.id/PSR-1.png',
             tags: ['Laravel', 'Tailwind', 'Node.js'],
         },
         {
             title: 'Dashboard Banker for XYZ Company',
             description: 'A dashboard for XYZ Company to manage their customer data and transaction.',
-            image: 'https://placehold.co/600x400/png',
+            image: 'https://realizy.my.id/BC-1.png',
             tags: ['Vue.js', 'Node.js', 'Express'],
         },
     ];
