@@ -14,7 +14,7 @@
             tags: ['Laravel', 'Node.js', 'Firebase'],
             private: [
                 {
-                    Repository: 'https://www.github.com/realizyy/dkampus',
+                    Repository: 'https://www.github.com/Dkampus/DKampus-Laravel',
                 },
             ],
         },
